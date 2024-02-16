@@ -24,7 +24,7 @@ public class C09_Post_JsonPathIleBodyTesti {
      }
      donen Response’un,
      status code’unun 200,
-     ve content type’inin application-json,
+     ve content type’inin application/json,
      ve response body’sindeki
      "firstname“in,"Ahmet",
      ve "lastname“in, "Bulut",
@@ -54,7 +54,8 @@ public class C09_Post_JsonPathIleBodyTesti {
         Response response=given().contentType(ContentType.JSON).when().body(reqBody.toString()).post(url);
 
         response.then().assertThat()
-                            .statusCode(200).body("booking.firstname", equalTo("Ahmet"),
+                            .statusCode(200).contentType("application/json")
+                                              .body("booking.firstname", equalTo("Ahmet"),
                                               "booking.lastname", equalTo("Bulut"),
                                                        "booking.totalprice", equalTo(500),
                                                        "booking.depositpaid", equalTo(false),
