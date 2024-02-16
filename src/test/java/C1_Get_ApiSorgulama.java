@@ -17,11 +17,11 @@ ve response suresinin 5 sn'den kisa oldugunu manuel olarak test ediniz.
  */
 
     /*
-    API Testlerinde genelde işlemler 4 aşamada gerçekleşir
-        1-Endpoint belirlenerek hazırlanır
-        2-Gerekli ise Expected Data hazırlanır
-        3-Actual Data kaydedilir
-        4-Assertion İşlemi Yapılır
+    //API Testlerinde genelde işlemler 4 aşamada gerçekleşir
+    //    1-Endpoint belirlenerek hazırlanır
+    //    2-Gerekli ise Expected Data hazırlanır
+    //    3-Actual Data kaydedilir
+    //    4-Assertion İşlemi Yapılır
      */
 
     @Test
