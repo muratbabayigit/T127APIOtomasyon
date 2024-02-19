@@ -1,3 +1,5 @@
+package tests;
+
 import io.restassured.response.Response;
 import org.junit.Test;
 
@@ -6,7 +8,7 @@ import static io.restassured.RestAssured.given;
 public class C1_Get_ApiSorgulama {
 
         /*
-C1_Get_ApiSorgulama
+tests.C1_Get_ApiSorgulama
 https://restful-booker.herokuapp.com/booking/10 url'ine bir GET request
 gonderdigimizde donen Response'un,
 status code'unun 200,

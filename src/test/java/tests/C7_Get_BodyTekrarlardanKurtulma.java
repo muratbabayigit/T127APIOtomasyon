@@ -1,3 +1,5 @@
+package tests;
+
 import groovy.json.JsonOutput;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
